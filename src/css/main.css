@@ -1,15 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+
 .profile-image-portifolio {
   box-shadow: darkgrey 2px 10px 20px;
+}
+
+@-webkit-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-forever;
+  -moz-animation-name: rotate-forever;
+  animation-name: rotate-forever;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  height: 30px;
+  width: 30px;
+  border: 8px solid #1e74ff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  margin: -15px 0 -15px;
+}
+
+.error-view {
+  position: absolute;
+  top: 50%;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  margin: -15px 0 -15px;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 20;
+  text-align: center;
+}
+
+.articles {
+  padding: 20px;  
+}
+
+.imageRadius {
+  display: block;
+  width: 50%;
+  background: white;
 }
 
 .social-networks {
   display: flex;
   flex: 1;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
-  padding-top: 30px;
+  background: transparent;
+}
 
+.icon {
+  padding: 0px 30px;
 }
 
 .network-icon {
@@ -52,9 +158,10 @@ a:hover, a:focus, a:active {
   line-height: 24px;
   color: #ffffff;
   position: relative;
+  margin-bottom: 5px
 }
 .fancy-button.bg-gradient1 {
-  text-shadow: 0px 0px 1px #1e74ff;
+  text-shadow: 0px 0px #1e74ff;
 }
 .fancy-button:before {
   content: '';
