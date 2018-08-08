@@ -11,10 +11,10 @@ import './css/index.css';
 ReactDOM.render(
   <ApolloProvider client={client}>
     <BrowserRouter>
-        <div>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/articles" component={Articles} />
-        </div>
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/articles" component={Articles} />
+      </div>
     </BrowserRouter>
   </ApolloProvider>,
   document.getElementById('root')
