@@ -5,13 +5,13 @@ import { withRouter } from 'react-router';
 import moment from 'moment';
 import '../../css/template.css';
 import '../../css/main.css';
-import { routeTo } from '../../utils/routeTo';
 
 type Props = {};
 type State = {};
 
 class Home extends Component<Props, State> {
   render() {
+    console.log(this.props);
     const age = moment().diff('1998-01-29', 'years');
     return (
       <div>
@@ -30,15 +30,15 @@ class Home extends Component<Props, State> {
               speak at meetups and conferences!, and i game when im not hunting some demons.
               <br />
               <br />
-              Today I work as Software Developer at Shawee and Horizon Four, <a href="https://shawee.io">Shawee</a> is a hackatons platform that is
-              constant expansion, and Horizon Four is a consulting company for startups! We can transform everything
-              that you want in code!!
+              Today I work as Software Developer at Shawee and Horizon Four, <a href="https://shawee.io">Shawee</a> is a
+              hackatons platform that is constant expansion, and Horizon Four is a consulting company for startups! We
+              can transform everything that you want in code!!
               <br />
               <br />I Already Worked at: Entria, Penske Logistics S.A and Urbit City
             </p>
-            <a href={routeTo('/articles')} className="fancy-button bg-gradient1">
+            <div onClick={() => this.props.history.push('/articles')} className="fancy-button bg-gradient1">
               <span>Articles</span>
-            </a>
+            </div>
           </div>
           <div className="image">
             <img className="profile-image-portifolio" src={require('../../png/profile.png')} alt="" />
