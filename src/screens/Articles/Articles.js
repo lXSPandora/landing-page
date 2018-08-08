@@ -5,7 +5,6 @@ import gql from 'graphql-tag';
 import type { ContextRouter } from 'react-router-dom';
 import { FaAngleLeft } from 'react-icons/all';
 import { Query } from 'react-apollo';
-import { routeTo } from '../../utils/routeTo';
 import '../../css/main.css';
 import '../../css/template.css';
 
@@ -28,7 +27,7 @@ type State = {
 class Articles extends React.Component<Props, State> {
   state = {
     limit: 10,
-  }
+  };
   render() {
     return (
       <section className="wrapper style1 align-center">
@@ -38,9 +37,12 @@ class Articles extends React.Component<Props, State> {
           <div className="index align-left">
             <section>
               <header>
-                <a href={routeTo('/')}>
-                  <h3><FaAngleLeft size="20" />Home</h3>
-                </a>
+                <div onClick={() => this.props.history.push('/')}>
+                  <h3>
+                    <FaAngleLeft size="20" />
+                    Home
+                  </h3>
+                </div>
               </header>
               <div className="content">
                 <Query
@@ -65,7 +67,7 @@ class Articles extends React.Component<Props, State> {
 
                     return (
                       <div>
-                        {data.posts.map((item) => (
+                        {data.posts.map(item => (
                           <div key={item.id}>
                             <header>
                               <h2>{item.title}</h2>

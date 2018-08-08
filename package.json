@@ -29,6 +29,9 @@
     "prettier": "^1.14.0"
   },
   "scripts": {
+    "lint": "eslint \"src/**/*.js*\"",
+    "prettier": "prettier --write --single-quote true --print-width 120",
+    "prettier:all": "prettier --write --single-quote true --print-width 120 --write './**/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
