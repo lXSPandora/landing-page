@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "apollo-boost": "^0.1.12",
+    "grabity": "^1.0.4",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
     "moment": "^2.22.2",

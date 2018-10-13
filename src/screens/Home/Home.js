@@ -20,7 +20,7 @@ class Home extends Component<Props, State> {
             <h1>Luiz Fernando, {age}y</h1>
             <p className="major">
               <strong>
-                FullStack Developer 🔥🚀 - <a href="https://horizonfour.com.br/">Horizon Four </a>
+                Remote React Native Engineer - <a href="https://www.popstand.com/">Popstand</a>
               </strong>
               <br />
               São Paulo, SP - Brazil <br />
@@ -30,11 +30,10 @@ class Home extends Component<Props, State> {
               speak at meetups and conferences!, and i game when im not hunting some demons.
               <br />
               <br />
-              Today I work as Software Developer at Shawee and Horizon Four, <a href="https://shawee.io">Shawee</a> is a
-              hackatons platform that is constant expansion, and Horizon Four is a consulting company for startups! We
-              can transform everything that you want in code!!
+              Today I work as Software Engineer at Popstand, <a href="https://www.popstand.com/">Popstand</a> is a
+              consulting company for startups and big tech companies! We can transform everything that you want in code!!
               <br />
-              <br />I Already Worked at: Entria, Penske Logistics S.A and Urbit City
+              <br />I Already Worked at: Entria, Penske Logistics S.A, Shawee, Horizon Four and Urbit City
             </p>
             <div onClick={() => this.props.history.push('/articles')} className="fancy-button bg-gradient1">
               <span>Articles</span>
