@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import Router from './Routing/Router';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Rubik');
+  @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   body {
     font-family: 'Rubik', sans-serif;
