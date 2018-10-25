@@ -66,6 +66,13 @@ const ArticlesQuery = gql`
   }
 `;
 
+interface Item {
+  id: string;
+  url: string;
+  subtitle: string;
+  title: string;
+}
+
 interface Props extends RouteComponentProps {}
 
 class Articles extends React.Component<Props> {
@@ -102,7 +109,7 @@ class Articles extends React.Component<Props> {
 
                 return (
                   <div>
-                    {data.posts.map(item => (
+                    {data.posts.map((item: Item) => (
                       <Card key={item.id}>
                         <h1>{item.title}</h1>
                         <p>{item.subtitle}</p>

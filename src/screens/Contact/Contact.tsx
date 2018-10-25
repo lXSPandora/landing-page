@@ -72,12 +72,11 @@ const TextArea = styled.textarea`
 interface Props extends RouteComponentProps {}
 
 interface State {
-  email: string;
   name: string;
   body: string;
 }
 
-class Contact extends React.Component<Props> {
+class Contact extends React.Component<Props, State> {
   state = {
     name: '',
     body: '',

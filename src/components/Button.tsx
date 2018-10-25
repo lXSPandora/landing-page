@@ -18,7 +18,7 @@ interface Props {
 }
 
 const Button = ({ onClick, title }: Props) => (
-  <Wrapper {...this.props} onClick={onClick}>
+  <Wrapper onClick={onClick}>
     {title}
   </Wrapper>
 );
