@@ -58,11 +58,6 @@ export const routes = [
     special: false,
   },
   {
-    goTo: '/repos',
-    routeName: 'Repos',
-    special: false,
-  },
-  {
     goTo: '/contact',
     routeName: 'Contact Me',
     special: true,
