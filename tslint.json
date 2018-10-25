@@ -1,0 +1,31 @@
+{
+  "extends": ["tslint-config-prettier"],
+  "linterOptions": {
+    "react/jsx-boolean-value": "off",
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ],
+    "jsx-no-lambda": "0",
+    "jsx-boolean-value": ["never"],
+    "no-any": "1",
+    "no-console": "1",
+    "no-magic-numbers": "1",
+    "only-arrow-functions": ["1"],
+    "curly": "1",
+    "no-var-keyword": "1",
+    "triple-equals": "1",
+    "indent": ["spaces"],
+    "prefer-const": "1",
+    "semicolon": ["1", "always"],
+    "eofline": "1",
+    "trailing-comma": ["1", { "multiline": "always", "singleline": "never" }],
+    "arrow-return-shorthand": ["1"],
+    "class-name": "1",
+    "interface-name": ["1", "always-prefix"],
+    "quotemark": ["1", "single", "jsx-double"],
+    "no-unused-variable": ["1", {"ignore-pattern": "^I"}],
+    "no-unused-expression": ["1", "allow-fast-null-checks"]
+  }
+}
