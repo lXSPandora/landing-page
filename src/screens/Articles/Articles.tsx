@@ -17,8 +17,14 @@ const ArticlesContainer = styled.div`
 `;
 
 const Card = styled.div`
+  min-width: 200px;
+  @media (max-width: 800px) {
+    width: 200px;
+  }
+  @media (min-width: 800px) {
+    width: 700px;
+  } 
   min-height: 100px;
-  width: 700px;
   padding: 20px 40px;
   border-radius: 30px;
   background-color: white;

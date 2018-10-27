@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import Button from './Button';
 
 const Wrapper = styled.div`
+  @media (min-width: 800px) {
+    grid-template-columns: 10% 90%;
+  }
   display: grid;
-  grid-template-columns: 10% 90%;
   align-items: center;
   justify-content: center;
   section {
@@ -32,7 +34,12 @@ const HeaderItemsContainer = styled.section`
 
 const ProfileImageContainer = styled.section`
   justify-content: center;
-  padding: 25px;
+  @media (min-width: 800px) {
+    padding: 25px;
+  }
+  @media (max-width: 800px) {
+    padding: 15px;
+  }
   img {
     width: 60px;
     height: 60px;
