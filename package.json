@@ -27,10 +27,9 @@
   "private": true,
   "scripts": {
     "build": "react-scripts-ts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "yarn build && gh-pages -d build",
     "eject": "react-scripts-ts eject",
     "lint": "tslint --fix 'src/**/*.ts*'",
-    "predeploy": "npm run build",
     "start": "react-scripts-ts start",
     "test": "react-scripts-ts test --env=jsdom"
   }
