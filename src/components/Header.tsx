@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import Button from './Button';
 
 const Wrapper = styled.div`
+  @media (min-width: 800px) {
+    grid-template-columns: 10% 90%;
+  }
   display: grid;
-  grid-template-columns: 10% 90%;
   align-items: center;
   justify-content: center;
   section {
