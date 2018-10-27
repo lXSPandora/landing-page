@@ -4,45 +4,93 @@ import styled from 'styled-components';
 import Header from '../../components/Header';
 
 const ProfileConatiner = styled.div`
-  display: grid;
-  grid-template-columns: 55% 45%;
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 55% 45%;
+  }
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   div {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    @media (min-width: 800px) {
+      flex-direction: row;
+      align-items: center;
+    }
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 
 const ProfileImageContainer = styled.div`
-  justify-content: flex-start;
+  @media (min-width: 800px) {
+    justify-content: flex-start;
+  }
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
   div {
-    width: 500px;
-    height: 500px;
+    @media (min-width: 800px) {
+      width: 500px;
+      height: 500px;
+      margin-left: 30px;
+      margin: 120px 0px;
+    }
+    @media (max-width: 800px) {
+      width: 200px;
+      height: 200px;
+      margin-left: -10px;
+      margin: 20px 0px;
+    }
     border-radius: 250px;
     background-image: url('https://avatars2.githubusercontent.com/u/18129416?s=460&v=4');
     background-size: cover;
-    margin: 120px 0px;
     box-shadow: 0px 0px 20px 0px grey;
-    margin-left: 30px;
   }
 `;
 
 const ProfileImageDescription = styled.div`
-  justify-content: flex-end;
+  @media (min-width: 800px) {
+    justify-content: flex-end;
+  }
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
   div {
     flex-direction: column;
     margin-right: 20px;
-    width: 700px;
+    @media (min-width: 800px) {
+      width: 700px;
+    }
+    @media (max-width: 800px) {
+      width: 300px;
+    }
     h1 {
+      @media (min-width: 800px) {
+        font-size: 3.5em;
+        text-align: left;
+      }
+      @media (max-width: 800px) {
+        font-size: 2.5em;
+        text-align: center;
+      }
       color: black;
-      text-align: left;
       font-size: 3.5em;
       font-weight: 600;
     };
     p {
       color: black;
-      text-align: left;
-      font-size: 1.5em;
+      @media (min-width: 800px) {
+        font-size: 1.5em;
+        text-align: left;
+      }
+      @media (max-width: 800px) {
+        font-size: 1.2em;
+        text-align: center;
+      }
       font-weight: 100;
     }
   }
