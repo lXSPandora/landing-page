@@ -1,8 +1,8 @@
 import * as React from 'react';
-import styled from 'styled-components';
 import { RouteComponentProps } from 'react-router';
-import Header from '../../components/Header';
+import styled from 'styled-components';
 import Button from '../../components/Button';
+import Header from '../../components/Header';
 
 const Container = styled.div`
   display: flex;
