@@ -34,7 +34,12 @@ const HeaderItemsContainer = styled.section`
 
 const ProfileImageContainer = styled.section`
   justify-content: center;
-  padding: 25px;
+  @media (min-width: 800px) {
+    padding: 25px;
+  }
+  @media (max-width: 800px) {
+    padding: 15px;
+  }
   img {
     width: 60px;
     height: 60px;
