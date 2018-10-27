@@ -14,18 +14,34 @@ const Container = styled.div`
 
 const Card = styled.div`
   min-height: 100px;
-  width: 700px;
+  @media (max-width: 800px) {
+    width: 200px;
+  }
+  @media (min-width: 800px) {
+    width: 700px;
+  } 
   padding: 20px 40px;
   border-radius: 30px;
   background-color: white;
   margin-bottom: 20px;
   box-shadow: 0px 0px 20px 0px #c6c6c6;
   h1 {
-    font-size: 30px;
+    @media (max-width: 800px) {
+      font-size: 20px;
+    }
+    @media (min-width: 800px) {
+      font-size: 30px;
+    } 
     font-weight: 500;
   }
   p {
-    font-size: 20px;
+    @media (max-width: 800px) {
+      font-size: 18px;
+      width: 150px;
+    }
+    @media (min-width: 800px) {
+      font-size: 20px;
+    } 
     font-weight: 300;
     margin-bottom: 40px;
   }
@@ -40,6 +56,9 @@ const InvertedRow = styled.div`
 `
 
 const Input = styled.input`
+  @media (max-width: 800px) {
+    width: 165px;
+  }
   display: flex;
   flex: 1;
   width: 95%;
@@ -55,6 +74,9 @@ const Input = styled.input`
 `
 
 const TextArea = styled.textarea`
+  @media (max-width: 800px) {
+    width: 150px;
+  }
   display: flex;
   flex: 1;
   width: 92%;
